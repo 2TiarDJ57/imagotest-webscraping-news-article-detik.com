@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Search News Article Detik.com</h1>
+    <input type="text" id="query" placeholder="Enter search term">
+    <button onclick="fetchResults()">Search</button>
+    <div id="loader" style="display: none;">Loading...</div> <!-- Loader -->
+
+    <div class="container">
+        <div id="results"></div>
+    </div>
+    
+</body>
+</html>
